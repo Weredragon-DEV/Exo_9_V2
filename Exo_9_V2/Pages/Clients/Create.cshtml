@@ -1,0 +1,24 @@
+﻿@page
+@model Exo_9_V2.Pages.Clients.CreateModel
+
+<h2>Ajouter un Client</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Client.Nom"></label>
+        <input asp-for="Client.Nom" class="form-control" />
+        <span asp-validation-for="Client.Nom" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Client.Telephone"></label>
+        <input asp-for="Client.Telephone" class="form-control" />
+        <span asp-validation-for="Client.Telephone" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Client.Courriel"></label>
+        <input asp-for="Client.Courriel" class="form-control" />
+        <span asp-validation-for="Client.Courriel" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Créer</button>
+    <a asp-page="./Index" class="btn btn-secondary">Annuler</a>
+</form>

@@ -1,0 +1,13 @@
+﻿@page "{id:int}"
+@model Exo_9_V2.Pages.Voitures.DetailsModel
+
+<h2>Détails de la Voiture</h2>
+
+<ul class="list-group">
+    <li class="list-group-item"><strong>Marque :</strong> @Model.Voiture.Marque</li>
+    <li class="list-group-item"><strong>Modèle :</strong> @Model.Voiture.Modele</li>
+    <li class="list-group-item"><strong>Année :</strong> @Model.Voiture.Annee</li>
+    <li class="list-group-item"><strong>Client :</strong> @Model.Voiture.Client?.Nom</li>
+</ul>
+
+<a asp-page="./Index" class="btn btn-secondary mt-3">Retour</a>

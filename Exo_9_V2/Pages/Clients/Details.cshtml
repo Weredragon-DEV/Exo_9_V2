@@ -1,0 +1,12 @@
+﻿@page "{id:int}"
+@model Exo_9_V2.Pages.Clients.DetailsModel
+
+<h2>Détails du Client</h2>
+
+<ul class="list-group">
+    <li class="list-group-item"><strong>Nom :</strong> @Model.Client.Nom</li>
+    <li class="list-group-item"><strong>Téléphone :</strong> @Model.Client.Telephone</li>
+    <li class="list-group-item"><strong>Courriel :</strong> @Model.Client.Courriel</li>
+</ul>
+
+<a asp-page="./Index" class="btn btn-secondary mt-3">Retour</a>

@@ -1,0 +1,18 @@
+﻿@page "{id:int}"
+@model Exo_9_V2.Pages.Clients.DeleteModel
+
+<h2>Supprimer un Client</h2>
+
+<div class="alert alert-warning">
+    <p>Es-tu sûr de vouloir supprimer le client suivant?</p>
+    <ul>
+        <li>Nom: @Model.Client.Nom</li>
+        <li>Téléphone: @Model.Client.Telephone</li>
+        <li>Courriel: @Model.Client.Courriel</li>
+    </ul>
+</div>
+
+<form method="post">
+    <button type="submit" class="btn btn-danger">Supprimer</button>
+    <a asp-page="./Index" class="btn btn-secondary">Annuler</a>
+</form>

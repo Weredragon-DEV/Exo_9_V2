@@ -1,0 +1,44 @@
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    var user = User;
+}
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>@ViewData["Title"] - Gestionnaire de Garage</title>
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+
+<header>
+    <div class="user-bar">
+        <div style="background: lime; padding: 20px;">LE LOGIN FONCTIONNE, pas l'affichage!</div>
+    </div>
+
+    <nav class="main-nav">
+        <a asp-page="/Accueil/Index">Accueil</a>
+        <a asp-page="/Clients/Index">Clients</a>
+        <a asp-page="/Voitures/Index">Voitures</a>
+    </nav>
+</header>
+
+<main>
+    @RenderBody()
+</main>
+
+<footer>
+    <p>&copy; 2025 - Exo_9_V2</p>
+</footer>
+
+<script asp-src="~/lib/jquery/dist/jquery.min.js"></script>
+<script asp-src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script asp-src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+
+@RenderSection("Scripts", required: false)
+
+</body>
+</html>

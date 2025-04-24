@@ -1,0 +1,33 @@
+﻿@page
+@model Exo_9_V2.Pages.Voitures.CreateModel
+
+<h2>Ajouter une Voiture</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Voiture.Marque"></label>
+        <input asp-for="Voiture.Marque" class="form-control" />
+        <span asp-validation-for="Voiture.Marque" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Voiture.Modele"></label>
+        <input asp-for="Voiture.Modele" class="form-control" />
+        <span asp-validation-for="Voiture.Modele" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Voiture.Annee"></label>
+        <input asp-for="Voiture.Annee" class="form-control" />
+        <span asp-validation-for="Voiture.Annee" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Voiture.ClientId">Client</label>
+        <select asp-for="Voiture.ClientId" class="form-control" asp-items="Model.ClientsList"></select>
+        <span asp-validation-for="Voiture.ClientId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Créer</button>
+    <a asp-page="./Index" class="btn btn-secondary">Annuler</a>
+</form>

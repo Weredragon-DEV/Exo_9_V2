@@ -1,0 +1,81 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Exo_9_V2
+build_property.RootNamespace = Exo_9_V2
+build_property.ProjectDir = C:\Users\symtr\RiderProjects\Exo_9_V2\Exo_9_V2\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\symtr\RiderProjects\Exo_9_V2\Exo_9_V2
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Accueil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjdWVpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Clients/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Clients/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Clients/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Clients/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Clients/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Voitures/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Voitures/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Voitures/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Voitures/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/symtr/RiderProjects/Exo_9_V2/Exo_9_V2/Pages/Voitures/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9pdHVyZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

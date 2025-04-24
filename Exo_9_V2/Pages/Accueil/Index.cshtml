@@ -1,0 +1,23 @@
+﻿@page
+@model Exo_9_V2.Pages.Accueil.IndexModel
+@{
+    ViewData["Title"] = "Accueil";
+    Layout = "_Layout";
+}
+
+
+<h1>Bienvenue dans le gestionnaire de garage 🚗</h1>
+
+<p>Utilisez les liens ci-dessous pour naviguer :</p>
+
+<div class="container">
+    <nav>
+        <a asp-page="/Clients/Index">Voir les clients</a>
+        <br />
+        <a asp-page="/Voitures/Index">Voir les voitures</a>
+    </nav>
+
+    <div class="image-container">
+        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/auto-1957037_960_720.jpg" alt="Garage" />
+    </div>
+</div>

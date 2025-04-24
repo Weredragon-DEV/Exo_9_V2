@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Exo_9_V2/css/style.9w52778dq2.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9w52778dq2"},{"Name":"integrity","Value":"sha256-p9L8kWUZTCbfbf9we1CrSe6WaIb4ttZplIcdbTyl4js="},{"Name":"label","Value":"_content/Exo_9_V2/css/style.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6299"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p9L8kWUZTCbfbf9we1CrSe6WaIb4ttZplIcdbTyl4js=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 06:00:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Exo_9_V2/css/style.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\style.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-p9L8kWUZTCbfbf9we1CrSe6WaIb4ttZplIcdbTyl4js="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6299"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022p9L8kWUZTCbfbf9we1CrSe6WaIb4ttZplIcdbTyl4js=\u0022"},{"Name":"Last-Modified","Value":"Thu, 24 Apr 2025 06:00:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

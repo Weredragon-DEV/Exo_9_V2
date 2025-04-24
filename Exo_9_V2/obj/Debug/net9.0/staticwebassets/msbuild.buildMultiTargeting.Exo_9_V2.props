@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Exo_9_V2.props" />
+</Project>

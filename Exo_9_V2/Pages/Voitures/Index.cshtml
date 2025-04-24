@@ -1,0 +1,53 @@
+﻿@page
+@model Exo_9_V2.Pages.Voitures.IndexModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+    ViewData["Title"] = "Voitures";
+    Layout = "_Layout";
+}
+<h2>Liste des Voitures</h2>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Marque</th>
+            <th>Modèle</th>
+            <th>Année</th>
+            <th>Client</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var voiture in Model.Voitures)
+        {
+            <tr>
+                <td>@voiture.Marque</td>
+                <td>@voiture.Modele</td>
+                <td>@voiture.Annee</td>
+                <td>@voiture.Client?.Nom</td>
+                <td>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Utilisateur"))
+                    {
+                        <a asp-page="./Edit" asp-route-id="@voiture.Id" class="btn btn-warning">Modifier</a>
+                        <a asp-page="./Delete" asp-route-id="@voiture.Id" class="btn btn-danger">Supprimer</a>
+                    }
+                    <a asp-page="./Details" asp-route-id="@voiture.Id" class="btn btn-info">Détails</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-page="./Create" class="btn btn-success">Ajouter une voiture</a>
+    }
+}
+else
+{
+    <p class="text-danger">Veuillez vous connecter pour voir les voitures.</p>
+}

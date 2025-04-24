@@ -1,0 +1,53 @@
+﻿@page
+@model Exo_9_V2.Pages.Clients.IndexModel
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<IdentityUser> SignInManager
+@{
+    ViewData["Title"] = "Clients";
+    Layout = "_Layout";
+}
+
+<h2>Liste des Clients</h2>
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Téléphone</th>
+            <th>Courriel</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var client in Model.Clients)
+        {
+            <tr>
+                <td>@client.Nom</td>
+                <td>@client.Telephone</td>
+                <td>@client.Courriel</td>
+                <td>
+                    @if (User.IsInRole("Admin") || User.IsInRole("Utilisateur"))
+                    {
+                        <a asp-page="./Edit" asp-route-id="@client.Id" class="btn btn-warning">Modifier</a>
+                        <a asp-page="./Delete" asp-route-id="@client.Id" class="btn btn-danger">Supprimer</a>
+                    }
+
+                    <a asp-page="./Details" asp-route-id="@client.Id" class="btn btn-info">Détails</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+
+    @if (User.IsInRole("Admin"))
+    {
+        <a asp-page="./Create" class="btn btn-success">Ajouter un client</a>
+    }
+}
+else
+{
+    <p class="text-danger">Veuillez vous connecter pour voir les clients.</p>
+}

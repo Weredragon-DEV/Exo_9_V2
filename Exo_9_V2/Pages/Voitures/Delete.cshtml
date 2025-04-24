@@ -1,0 +1,19 @@
+﻿@page "{id:int}"
+@model Exo_9_V2.Pages.Voitures.DeleteModel
+
+<h2>Supprimer une Voiture</h2>
+
+<div class="alert alert-warning">
+    <p>Es-tu sûr de vouloir supprimer cette voiture?</p>
+    <ul>
+        <li>Marque : @Model.Voiture.Marque</li>
+        <li>Modèle : @Model.Voiture.Modele</li>
+        <li>Année : @Model.Voiture.Annee</li>
+        <li>Client : @Model.Voiture.Client?.Nom</li>
+    </ul>
+</div>
+
+<form method="post">
+    <button type="submit" class="btn btn-danger">Supprimer</button>
+    <a asp-page="./Index" class="btn btn-secondary">Annuler</a>
+</form>

@@ -92,7 +92,8 @@ button:hover {
 
 /* Fix the header */
 h1 {
-    position: fixed;
+    position: static;
+    pointer-events: none;
     top: 0;
     left: 0;
     width: 100%;

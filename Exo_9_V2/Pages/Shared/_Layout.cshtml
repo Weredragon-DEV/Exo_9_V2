@@ -14,10 +14,11 @@
 </head>
 <body>
 
-<header>
-    <div class="user-bar">
-        <div style="background: lime; padding: 20px;">LE LOGIN FONCTIONNE, pas l'affichage!</div>
-    </div>
+    <header>
+        <nav class="user-bar">
+            @await Html.PartialAsync("_LoginPartial")
+        </nav>
+
 
     <nav class="main-nav">
         <a asp-page="/Accueil/Index">Accueil</a>
